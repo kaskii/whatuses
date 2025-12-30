@@ -10,6 +10,13 @@ readme = "README.md"
 license-file = "LICENSE"
 keywords = ["cli", "process", "file", "port", "network"]
 categories = ["command-line-utilities", "os"]
+exclude = [
+    ".idea/*",
+    ".github/*",
+    "wix/*",
+    "dist-workspace.toml",
+    ".gitignore"
+]
 
 [package.metadata.wix]
 upgrade-guid = "9C0F2464-96E7-4662-AD1E-B01301C71079"
