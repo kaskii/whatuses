@@ -4,8 +4,12 @@ version = "0.2.0"
 description = "A simple CLI tool to find which process is using a file or port"
 edition = "2024"
 authors = ["Alexander Elo"]
+homepage = "https://github.com/kaskii/whatuses"
 repository = "https://github.com/kaskii/whatuses"
+readme = "README.md"
 license-file = "LICENSE"
+keywords = ["cli", "process", "file", "port", "network"]
+categories = ["command-line-utilities", "os"]
 
 [package.metadata.wix]
 upgrade-guid = "9C0F2464-96E7-4662-AD1E-B01301C71079"
