@@ -18,6 +18,10 @@ struct Args {
     #[arg(short, long, value_name = "PORT")]
     port: Option<u16>,
 
+    /// Specific file path to check
+    #[arg(short, long, value_name = "FILE")]
+    file: Option<PathBuf>,
+
     /// Enable detailed output
     #[arg(short, long, default_value_t = false)]
     verbose: bool,
@@ -32,6 +36,8 @@ fn main() {
 
     if let Some(port) = args.port {
         check_port(port, args.verbose);
+    } else if let Some(file) = args.file {
+        check_file(file, args.verbose);
     } else if let Some(input) = args.input {
         // Try to parse input as a port first
         if let Ok(port) = input.parse::<u16>() {

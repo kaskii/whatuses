@@ -36,6 +36,12 @@ To see which processes are using a specific file:
 whatuses C:\path\to\your\file.txt
 ```
 
+Or explicitly using the `--file` flag:
+
+```bash
+whatuses --file C:\path\to\your\file.txt
+```
+
 On Linux:
 ```bash
 whatuses /path/to/your/file.txt
