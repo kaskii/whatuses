@@ -1,6 +1,6 @@
 [package]
 name = "whatuses"
-version = "0.1.0"
+version = "0.2.0"
 description = "A simple CLI tool to find which process is using a file or port"
 edition = "2024"
 authors = ["Alexander Elo"]
