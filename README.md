@@ -3,7 +3,7 @@
 A simple, cross-platform CLI tool to identify which processes are using a specific file or listening on a network port.
 
 [![Crates.io](https://img.shields.io/crates/v/whatuses.svg)](https://crates.io/crates/whatuses)
-[![License](https://img.shields.io/badge/license-PolyForm--Noncommercial--1.0.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Features
 
