@@ -1,0 +1,27 @@
+[package]
+name = "whatuses"
+version = "0.1.0"
+description = "A simple CLI tool to find which process is using a file or port"
+edition = "2024"
+authors = ["Alexander Elo"]
+repository = "https://github.com/kaskii/whatuses"git ad
+license-file = "LICENSE"
+
+[package.metadata.wix]
+upgrade-guid = "9C0F2464-96E7-4662-AD1E-B01301C71079"
+path-guid = "2859D4B1-2E23-4A02-ADA5-95F2986CACF9"
+license = "wix/License.rtf"
+eula = "wix/License.rtf"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+netstat-esr = "0.8.1"
+sysinfo = "0.37"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_System_RestartManager", "Win32_System_Threading", "Win32_System_ProcessStatus", "Win32_Graphics_Gdi"] }
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
